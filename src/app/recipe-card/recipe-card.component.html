@@ -1,0 +1,18 @@
+<div class="card" *ngFor="let recipe of recipes">
+  <div class="recipe-section">
+    <app-recipe-detail [currRecipe]="recipe"> </app-recipe-detail>
+  </div>
+  <div class="edit-section">
+    <button (click)="deleteRecipe(recipe)" id="hi">Delete</button>
+    <button>Rename</button>
+    <div>
+      <input type="file" />
+      <span id="val"></span>
+      <span id="button">Select File</span>
+    </div>
+    <button>View Recipe</button>
+  </div>
+  <div class="img-section">
+    <img src="../../assets/imgs/road.jpg" alt="srry" />
+  </div>
+</div>
